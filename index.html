@@ -177,7 +177,8 @@
             transform: rotate(-4deg) scale(1.06);
         }
 
-        .hero-wall img {
+        .hero-wall img,
+        .hero-wall video {
             aspect-ratio: 9 / 19.5;
             border: 1px solid rgba(255, 255, 255, 0.18);
             border-radius: 8px;
@@ -188,7 +189,9 @@
         }
 
         .hero-wall img:nth-child(2),
-        .hero-wall img:nth-child(4) {
+        .hero-wall img:nth-child(4),
+        .hero-wall video:nth-child(2),
+        .hero-wall video:nth-child(4) {
             margin-top: 84px;
         }
 
@@ -344,7 +347,8 @@
             overflow: hidden;
         }
 
-        .game-shot img {
+        .game-shot img,
+        .game-shot video {
             aspect-ratio: 9 / 19.5;
             height: 100%;
             object-fit: cover;
@@ -352,7 +356,8 @@
             width: 100%;
         }
 
-        .game-card:hover .game-shot img {
+        .game-card:hover .game-shot img,
+        .game-card:hover .game-shot video {
             transform: scale(1.035);
         }
 
@@ -640,7 +645,7 @@
     <main>
         <section class="hero" aria-labelledby="hero-title">
             <div class="hero-wall" aria-hidden="true">
-                <img src="/BubbleCraps.png" alt="">
+                <video src="/BubbleCrapsDemo.mp4" poster="/BubbleCraps.png" autoplay muted loop playsinline aria-label="Bubble Craps gameplay"></video>
                 <img src="/Drop.png" alt="">
                 <img src="/Marketing1.jpg" alt="">
                 <img src="/PixelPlanesDemo.jpg" alt="">
@@ -686,7 +691,7 @@
                 <div class="game-grid">
                     <article class="game-card">
                         <div class="game-shot">
-                            <img src="/BubbleCraps.png" alt="Bubble Craps mobile game screenshot">
+                            <video src="/BubbleCrapsDemo.mp4" poster="/BubbleCraps.png" autoplay muted loop playsinline aria-label="Bubble Craps gameplay"></video>
                         </div>
                         <div class="game-info">
                             <span class="game-meta">Casino arcade</span>
