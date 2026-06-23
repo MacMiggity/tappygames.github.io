@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Development Services - Tappy Games</title>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #6366F1;
-            --secondary: #10B981;
-            --accent: #F471B5;
-            --dark: #0F172A;
-            --darker: #020617;
+            --primary: #0090FF;
+            --secondary: #FFD000;
+            --accent: #FFA000;
+            --dark: #070A18;
+            --darker: #03040A;
             --light: #F8FAFC;
             --surface: rgba(255, 255, 255, 0.03);
             --glass: rgba(255, 255, 255, 0.1);
@@ -67,11 +69,15 @@
         }
 
         .logo {
-            font-family: 'Press Start 2P', cursive;
-            font-size: 1rem;
-            color: var(--primary);
+            display: inline-flex;
             text-decoration: none;
-            white-space: nowrap;
+            width: 150px;
+        }
+
+        .logo img {
+            display: block;
+            height: auto;
+            width: 100%;
         }
 
         .services-content {
@@ -174,7 +180,7 @@
     <header>
         <div class="container">
             <nav>
-                <a href="/" class="logo">TAPPY GAMES</a>
+                <a href="/" class="logo" aria-label="Tappy Games home"><img src="/TappyGamesLogoBrand.png" alt="Tappy Games"></a>
             </nav>
         </div>
     </header>
