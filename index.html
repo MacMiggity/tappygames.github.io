@@ -328,7 +328,7 @@
         .game-grid {
             display: grid;
             gap: 18px;
-            grid-template-columns: repeat(5, minmax(0, 1fr));
+            grid-template-columns: repeat(4, minmax(0, 1fr));
         }
 
         .game-card {
@@ -336,10 +336,6 @@
             border: 1px solid var(--line);
             border-radius: 8px;
             overflow: hidden;
-        }
-
-        .game-card.featured {
-            grid-column: span 2;
         }
 
         .game-shot {
@@ -532,10 +528,6 @@
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
 
-            .game-card.featured {
-                grid-column: span 1;
-            }
-
             .capabilities {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
@@ -648,10 +640,10 @@
     <main>
         <section class="hero" aria-labelledby="hero-title">
             <div class="hero-wall" aria-hidden="true">
+                <img src="/BubbleCraps.png" alt="">
                 <img src="/Drop.png" alt="">
                 <img src="/Marketing1.jpg" alt="">
                 <img src="/PixelPlanesDemo.jpg" alt="">
-                <img src="/FableForge.jpg" alt="">
             </div>
             <div class="container">
                 <div class="hero-content">
@@ -665,7 +657,7 @@
                     </div>
                     <div class="proof-strip" aria-label="Company highlights">
                         <div class="proof">
-                            <strong>5</strong>
+                            <strong>4</strong>
                             <span>Public titles</span>
                         </div>
                         <div class="proof">
@@ -688,11 +680,22 @@
                         <p class="section-kicker">Games portfolio</p>
                         <h2 class="section-title">Distinct mobile titles with real product range.</h2>
                     </div>
-                    <p class="section-copy">From physics-driven challenges to narrative creation and arcade action, Tappy Games develops titles that are easy to understand and built for repeat play.</p>
+                    <p class="section-copy">From casino arcade action to physics-driven challenges, AI fantasy, and retro flight, Tappy Games develops titles that are easy to understand and built for repeat play.</p>
                 </div>
 
                 <div class="game-grid">
-                    <article class="game-card featured">
+                    <article class="game-card">
+                        <div class="game-shot">
+                            <img src="/BubbleCraps.png" alt="Bubble Craps mobile game screenshot">
+                        </div>
+                        <div class="game-info">
+                            <span class="game-meta">Casino arcade</span>
+                            <h3>Bubble Craps</h3>
+                            <p>A bright, mobile-first take on dice action with approachable casino energy.</p>
+                        </div>
+                    </article>
+
+                    <article class="game-card">
                         <div class="game-shot">
                             <img src="/Drop.png" alt="D.R.O.P. mobile game screenshot showing the drop selection screen">
                         </div>
@@ -722,28 +725,6 @@
                             <span class="game-meta">Arcade flight</span>
                             <h3>Pixel Planes</h3>
                             <p>Retro skies, fast reads, and score-focused play tuned for short, satisfying sessions.</p>
-                        </div>
-                    </article>
-
-                    <article class="game-card">
-                        <div class="game-shot">
-                            <img src="/FableForge.jpg" alt="Fable Forge mobile game screenshot">
-                        </div>
-                        <div class="game-info">
-                            <span class="game-meta">Story creation</span>
-                            <h3>Fable Forge</h3>
-                            <p>A narrative crafting game where players shape magical stories and creative outcomes.</p>
-                        </div>
-                    </article>
-
-                    <article class="game-card">
-                        <div class="game-shot">
-                            <img src="/BubbleCraps.png" alt="Bubble Craps mobile game screenshot">
-                        </div>
-                        <div class="game-info">
-                            <span class="game-meta">Casino arcade</span>
-                            <h3>Bubble Craps</h3>
-                            <p>A bright, mobile-first take on dice action with approachable casino energy.</p>
                         </div>
                     </article>
                 </div>
