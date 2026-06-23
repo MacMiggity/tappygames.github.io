@@ -171,10 +171,10 @@
             display: grid;
             gap: 18px;
             grid-template-columns: repeat(4, minmax(180px, 1fr));
-            inset: 0 -90px 0 36%;
-            opacity: 0.74;
+            inset: 0 -8vw 0 -8vw;
+            opacity: 0.48;
             position: absolute;
-            transform: rotate(-4deg) scale(1.06);
+            transform: rotate(-4deg) scale(1.08);
         }
 
         .hero-wall img,
@@ -196,9 +196,11 @@
         }
 
         .hero-content {
-            max-width: 680px;
+            margin: 0 auto;
+            max-width: 720px;
             min-width: 0;
             position: relative;
+            text-align: center;
             z-index: 2;
         }
 
@@ -239,7 +241,7 @@
         .hero-logo {
             display: block;
             filter: drop-shadow(0 24px 34px rgba(0, 0, 0, 0.5));
-            margin-bottom: 24px;
+            margin: 0 auto 24px;
             max-width: 100%;
             width: min(620px, calc(100vw - 48px));
         }
@@ -247,7 +249,7 @@
         .hero-copy {
             color: rgba(246, 241, 230, 0.88);
             font-size: clamp(1.1rem, 2vw, 1.36rem);
-            margin-bottom: 30px;
+            margin: 0 auto 30px;
             max-width: 610px;
         }
 
@@ -255,6 +257,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 12px;
+            justify-content: center;
             margin-bottom: 46px;
         }
 
@@ -263,8 +266,10 @@
             display: grid;
             gap: 18px;
             grid-template-columns: repeat(3, minmax(0, 1fr));
+            margin: 0 auto;
             max-width: 660px;
             padding-top: 22px;
+            text-align: left;
         }
 
         .proof strong {
